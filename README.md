@@ -1,5 +1,7 @@
 # Floquet train-suite autoresearch lab
 
+This repository is an autoresearch-generated Floquet problem-solving monorepo built from train-split records in [`kunyuan/floquet-workflow-benchmark`](https://github.com/kunyuan/floquet-workflow-benchmark). It is an independent experimental artifact, not an official benchmark release.
+
 This is a black-box multi-problem autoresearch lab for the Floquet train split.
 
 Visible files:
