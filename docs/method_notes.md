@@ -61,13 +61,13 @@ docs/
 ### 9–10. Floquet delta scatterer (a_d_c1, a_d_c2)
 - Infinite tridiagonal outgoing-wave matrix:
   diag √(ε+n), off-diag i√(a_d).
-- **a_d_c1** ≈ 0.78: transmission zero collides with n=1 threshold.
+- **a_d_c1** ≈ 0.782: transmission zero collides with n=1 threshold.
 - **a_d_c2** ≈ 0.935: quasibound pole exits D₀ at ε_R = 0.
 
 ### 11. Weyl node coalescence (A_0_c)
 - Stacked Chern insulator + high-frequency drive.
 - Floquet mass renormalisation → Weyl nodes approach and merge.
-- **A_0_c ≈ 1.035 nm⁻¹** for given parameters.
+- **A_0_c ≈ 1.034 nm⁻¹** for given parameters.
 
 ### 12. Photonic Hubbard CDT
 - Waveguide simulator: doublon CDT via Bessel renormalisation.

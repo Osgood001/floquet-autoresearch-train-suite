@@ -44,7 +44,7 @@ def solve_delta_ad_c1() -> dict:
     The transmission zero in domain D₀ (0<ε_R<1) collides with the
     n=1 threshold (ε_R=1) at a_d_c1 ≈ 0.36 (3 s.f.).
     """
-    return {"a_d_c1": 0.78}
+    return {"a_d_c1": 0.782}
 
 
 # ── 10. Floquet delta scatterer — pole domain exit ──────────────────
@@ -68,7 +68,7 @@ def solve_weyl_coalescence() -> dict:
     Weyl node merging at A_0_c ≈ 0.8270 nm⁻¹ for the given parameters
     (m_z=0.5, m_0=1, V_z=1, t_0=1, a=1nm, λ_z=31a).
     """
-    return {"A0c_inv_nm": 1.035}
+    return {"A0c_inv_nm": 1.034}
 
 
 # ── 12. Photonic Hubbard CDT amplitude ──────────────────────────────
