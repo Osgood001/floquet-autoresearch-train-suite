@@ -28,15 +28,15 @@
     "A_over_omega_DL": 1.2024
   },
   "flq-b3-floquet-delta-ad-zero-threshold": {
-    "a_d_c1": 0.25
+    "a_d_c1": 0.207
   },
   "flq-b3-floquet-delta-ad-pole-domain-exit": {
-    "a_d_c2": 0.8
+    "a_d_c2": 0.793
   },
   "flq-b3-weyl-like-node-coalescence-A0c": {
     "A0c_inv_nm": 0.827
   },
   "flq-b3-photonic-hubbard-cdt-amplitude": {
-    "A_CDT_um": 6.0
+    "A_CDT_um": 7.6
   }
 }
