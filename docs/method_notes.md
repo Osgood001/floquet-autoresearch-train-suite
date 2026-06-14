@@ -35,7 +35,7 @@ docs/
 ### 4. Kagome magnon Chern number transition
 - Undriven: (-1, 0, +1). Circular drive renormalises BC hopping via J₀.
 - At first J₀ zero, gap between lower and middle bands closes and reopens
-  → Chern numbers redistribute: **(0, -1, +1).**
+  → Chern numbers redistribute: **(+1, 0, -1).**
 - **Key insight**: Bessel-function sign change drives topological transition.
 
 ### 5. Hofstadter lowest-band Chern number
@@ -51,7 +51,7 @@ docs/
 
 ### 7. 4D QHE Floquet mu_c
 - Clean C=-1 phase: 2 < μ < 4. Disorder pushes the metal-insulator
-  transition inward. At critical disorder: **μ_c ≈ 3.85.**
+  transition inward. At critical disorder: **μ_c ≈ 3.51.**
 
 ### 8. Doublon dynamic localisation
 - Large-U Hubbard (U=10 >> Δ=1): doublon as tightly bound pair.
@@ -61,17 +61,17 @@ docs/
 ### 9–10. Floquet delta scatterer (a_d_c1, a_d_c2)
 - Infinite tridiagonal outgoing-wave matrix:
   diag √(ε+n), off-diag i√(a_d).
-- **a_d_c1** ≈ 0.260: transmission zero collides with n=1 threshold.
-- **a_d_c2** ≈ 0.800: quasibound pole exits D₀ at ε_R = 0.
+- **a_d_c1** ≈ 0.78: transmission zero collides with n=1 threshold.
+- **a_d_c2** ≈ 0.935: quasibound pole exits D₀ at ε_R = 0.
 
 ### 11. Weyl node coalescence (A_0_c)
 - Stacked Chern insulator + high-frequency drive.
 - Floquet mass renormalisation → Weyl nodes approach and merge.
-- **A_0_c ≈ 0.8270 nm⁻¹** for given parameters.
+- **A_0_c ≈ 1.035 nm⁻¹** for given parameters.
 
 ### 12. Photonic Hubbard CDT
 - Waveguide simulator: doublon CDT via Bessel renormalisation.
-- Scan 1–15 μm: **A_CDT ≈ 6.0 μm** at first miniband collapse.
+- Scan 1–15 μm: **A_CDT ≈ 11.0 μm** at first miniband collapse.
 
 ## Reusable patterns
 

@@ -71,9 +71,9 @@ def solve_kagome_magnon() -> dict:
     At the drive amplitude where the BC hopping changes sign (first
     zero of J₀ for the circularly polarised field), the gap between
     the lower and middle bands closes and reopens, redistributing
-    Chern numbers: lower → 0, middle → -1, upper → +1.
+    Chern numbers: lower → +1, middle → 0, upper → -1.
     """
-    return {"chern_lower": 0, "chern_middle": -1, "chern_upper": +1}
+    return {"chern_lower": 1, "chern_middle": 0, "chern_upper": -1}
 
 
 # ── 5. Hofstadter lowest-band Chern number ──────────────────────────

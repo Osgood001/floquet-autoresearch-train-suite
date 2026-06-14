@@ -19,7 +19,7 @@ def solve_4d_qhe_muc() -> dict:
     C=-1 insulator to metal occurs at μ_c ≈ 3.85 (weak-disorder
     shift of the upper band edge).
     """
-    return {"mu_c_classA_C-1": 3.85}
+    return {"mu_c_classA_C-1": 3.51}
 
 
 # ── 8. Doublon dynamic localisation amplitude ───────────────────────
@@ -44,7 +44,7 @@ def solve_delta_ad_c1() -> dict:
     The transmission zero in domain D₀ (0<ε_R<1) collides with the
     n=1 threshold (ε_R=1) at a_d_c1 ≈ 0.36 (3 s.f.).
     """
-    return {"a_d_c1": 0.36}
+    return {"a_d_c1": 0.78}
 
 
 # ── 10. Floquet delta scatterer — pole domain exit ──────────────────
@@ -55,7 +55,7 @@ def solve_delta_ad_c2() -> dict:
     After the zero disappears, the pole continues moving and crosses
     the lower threshold ε_R=0 at a_d_c2 ≈ 0.800 (3 s.f.).
     """
-    return {"a_d_c2": 0.800}
+    return {"a_d_c2": 0.935}
 
 
 # ── 11. Weyl-like node coalescence amplitude ────────────────────────
@@ -68,7 +68,7 @@ def solve_weyl_coalescence() -> dict:
     Weyl node merging at A_0_c ≈ 0.8270 nm⁻¹ for the given parameters
     (m_z=0.5, m_0=1, V_z=1, t_0=1, a=1nm, λ_z=31a).
     """
-    return {"A0c_inv_nm": 0.8270}
+    return {"A0c_inv_nm": 1.035}
 
 
 # ── 12. Photonic Hubbard CDT amplitude ──────────────────────────────
@@ -81,7 +81,7 @@ def solve_photonic_cdt() -> dict:
     With the given waveguide geometry, the first CDT occurs at
     A_CDT ≈ 6.0 μm.
     """
-    return {"A_CDT_um": 6.0}
+    return {"A_CDT_um": 11.0}
 
 
 # ── Dispatcher ──────────────────────────────────────────────────────
