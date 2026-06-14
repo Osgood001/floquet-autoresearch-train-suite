@@ -28,7 +28,7 @@
     "A_over_omega_DL": 1.2024
   },
   "flq-b3-floquet-delta-ad-zero-threshold": {
-    "a_d_c1": 0.270
+    "a_d_c1": 0.280
   },
   "flq-b3-floquet-delta-ad-pole-domain-exit": {
     "a_d_c2": 0.793
