@@ -1,0 +1,13 @@
+{
+  "id": "flq-b1-hofstadter-chern",
+  "track": "B1",
+  "track_dir": "B1-topo-invariants",
+  "split": "train",
+  "model_family": "graphene-driven",
+  "verifier_type": "integer_exact",
+  "question": "Consider the Harper-Hofstadter (HH) Hamiltonian on a 2D square optical lattice in the Landau gauge with magnetic flux Phi = pi/2 per plaquette: H = -J * sum_{m,n} [ exp(i*n*Phi) * a^dagger_{m+1,n} * a_{m,n} + a^dagger_{m,n+1} * a_{m,n} + h.c. ], where a^dagger_{m,n} and a_{m,n} are creation and annihilation operators at site (m,n), J is the nearest-neighbor tunneling amplitude (isotropic, tuned so J_x^eff = J_y^eff = J), and the flux Phi = pi/2 gives a 4-site magnetic unit cell producing 4 Hofstadter bands. The lowest Hofstadter band E_1 (the one with smallest quasi-momentum energy) is isolated from the others. Sign convention: define nu_1 > 0 when the anomalous transverse drift of the center of mass is in the +x direction for a cloud prepared in the lowest band under a gradient applied in the +y direction (consistent with the experimental convention of the source paper, where a positive transverse shift x(t) > 0 was measured and fitted to yield nu_1 = +1). What is the Chern number nu_1 of the lowest isolated Hofstadter band E_1 at flux Phi = pi/2? Output a JSON object {\"chern_number_lowest_band\": <integer>}.",
+  "output_schema": {
+    "chern_number_lowest_band": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

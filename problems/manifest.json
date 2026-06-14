@@ -1,0 +1,126 @@
+[
+  {
+    "id": "flq-b1-nhqw-nonbloch",
+    "track": "B1",
+    "track_dir": "B1-topo-invariants",
+    "model_family": "quantum-walk",
+    "verifier_type": "integer_exact",
+    "answer_keys": [
+      "winding_number"
+    ]
+  },
+  {
+    "id": "flq-b1-bbh-n0-0-npi-4",
+    "track": "B1",
+    "track_dir": "B1-topo-invariants",
+    "model_family": "bbh-lattice",
+    "verifier_type": "integer_exact",
+    "answer_keys": [
+      "N_0",
+      "N_pi",
+      "corner_states_pi_gap"
+    ]
+  },
+  {
+    "id": "flq-b1-kicked-ssh-chern2",
+    "track": "B1",
+    "track_dir": "B1-topo-invariants",
+    "model_family": "kicked-ssh",
+    "verifier_type": "integer_exact",
+    "answer_keys": [
+      "max_chern_number_magnitude"
+    ]
+  },
+  {
+    "id": "flq-b1-kagome-magnon",
+    "track": "B1",
+    "track_dir": "B1-topo-invariants",
+    "model_family": "magnon-honeycomb",
+    "verifier_type": "integer_exact",
+    "answer_keys": [
+      "chern_lower",
+      "chern_middle",
+      "chern_upper"
+    ]
+  },
+  {
+    "id": "flq-b1-hofstadter-chern",
+    "track": "B1",
+    "track_dir": "B1-topo-invariants",
+    "model_family": "graphene-driven",
+    "verifier_type": "integer_exact",
+    "answer_keys": [
+      "chern_number_lowest_band"
+    ]
+  },
+  {
+    "id": "flq-b1-kicked-rotor-dirac",
+    "track": "B1",
+    "track_dir": "B1-topo-invariants",
+    "model_family": "kicked-rotor",
+    "verifier_type": "integer_exact",
+    "answer_keys": [
+      "edge_state_count"
+    ]
+  },
+  {
+    "id": "flq-b3-4d-qhe-floquet-muc-classA",
+    "track": "B3",
+    "track_dir": "B3-critical-points",
+    "model_family": "floquet-4d-dirac",
+    "verifier_type": "scalar_tolerance",
+    "answer_keys": [
+      "mu_c_classA_C-1"
+    ]
+  },
+  {
+    "id": "flq-b3-two-electron-doublon-localization",
+    "track": "B3",
+    "track_dir": "B3-critical-points",
+    "model_family": "hubbard-doublon",
+    "verifier_type": "scalar_tolerance",
+    "answer_keys": [
+      "A_over_omega_DL"
+    ]
+  },
+  {
+    "id": "flq-b3-floquet-delta-ad-zero-threshold",
+    "track": "B3",
+    "track_dir": "B3-critical-points",
+    "model_family": "floquet-delta-scatterer",
+    "verifier_type": "scalar_tolerance",
+    "answer_keys": [
+      "a_d_c1"
+    ]
+  },
+  {
+    "id": "flq-b3-floquet-delta-ad-pole-domain-exit",
+    "track": "B3",
+    "track_dir": "B3-critical-points",
+    "model_family": "floquet-delta-scatterer",
+    "verifier_type": "scalar_tolerance",
+    "answer_keys": [
+      "a_d_c2"
+    ]
+  },
+  {
+    "id": "flq-b3-weyl-like-node-coalescence-A0c",
+    "track": "B3",
+    "track_dir": "B3-critical-points",
+    "model_family": "floquet-weyl-stacked-chern",
+    "verifier_type": "scalar_tolerance",
+    "answer_keys": [
+      "A0c_inv_nm"
+    ]
+  },
+  {
+    "id": "flq-b3-photonic-hubbard-cdt-amplitude",
+    "track": "B3",
+    "track_dir": "B3-critical-points",
+    "model_family": "hubbard-doublon",
+    "verifier_type": "scalar_tolerance",
+    "answer_keys": [
+      "A_CDT_um"
+    ]
+  }
+]

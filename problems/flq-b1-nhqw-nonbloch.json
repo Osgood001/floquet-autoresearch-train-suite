@@ -1,0 +1,13 @@
+{
+  "id": "flq-b1-nhqw-nonbloch",
+  "track": "B1",
+  "track_dir": "B1-topo-invariants",
+  "split": "train",
+  "model_family": "quantum-walk",
+  "verifier_type": "integer_exact",
+  "question": "Consider the non-unitary split-step quantum walk with Floquet (stroboscopic) evolution operator U_0 = T_down * R_y(theta_2) * M * T_up * R_y(theta_1), where R_y(theta) = exp(-i theta sigma_y / 2) is a spin rotation by angle theta about y, M = diag(e^{+gamma}, e^{-gamma}) in the spin basis is a polarization-selective loss with gamma > 0 (so a = e^{gamma} is the loss parameter), and T_up (T_down) are conditional shift operators that translate spin-up right (spin-down left) by one lattice site. The system is defined under open boundary conditions on a 1D lattice. The non-Bloch winding number v is defined by the complex-beta Berry-type integral v = (1/(2*pi)) * sum_{pm} contour_integral_{C_beta^{inside}} d_beta <psi_pm^L(beta)| i * partial_beta |psi_pm^R(beta)>, where |psi_pm^R(beta)> and <psi_pm^L(beta)| are the right and left eigenstates of H_eff(beta) on the generalized Brillouin zone (GBZ), and C_beta^{inside} is the inside branch of the GBZ contour as the boundary parameter Delta -> 0. For parameter values theta_1 = 1.6*pi, theta_2 = 0.58*pi, a = e^{gamma} = 0.82 (i.e., gamma = ln(0.82) ≈ -0.198), which is a topologically nontrivial gapped phase, what is the value of the non-Bloch winding number v? Output a JSON object {\"winding_number\": <integer>}.",
+  "output_schema": {
+    "winding_number": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

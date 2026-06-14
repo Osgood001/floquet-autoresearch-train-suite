@@ -1,0 +1,13 @@
+{
+  "id": "flq-b3-two-electron-doublon-localization",
+  "track": "B3",
+  "track_dir": "B3-critical-points",
+  "split": "train",
+  "model_family": "hubbard-doublon",
+  "verifier_type": "scalar_tolerance",
+  "question": "Consider a one-dimensional tight-binding lattice with N sites, single-electron transfer integral Delta=1, and on-site Hubbard repulsion U=10 (large-U regime, U >> Delta). Both electrons start colocated at site 0: C_{l,m}(0) = delta_{l,0}*delta_{m,0}. A spatially uniform oscillating electric field is applied such that the single-electron coupling is -eE(t)*d = A*cos(omega*t) with drive frequency omega=1 and variable amplitude A. The doublon (on-site two-electron bound state) carries charge -2e and thus couples to the field as -2eE(t)*d = 2A*cos(omega*t) for its center-of-mass coordinate. Run the full Floquet pipeline: for each A value compute the one-period evolution operator U(T,0) (T=2*pi/omega) of the two-electron Hamiltonian, diagonalize it to obtain Floquet quasienergies, and identify Floquet states with doublon character (same-site weight > 0.9). The dynamic localization condition for the doublon is reached when the doublon quasienergy band collapses — that is, the first drive amplitude at which coherent spreading of the doublon is suppressed and the bandwidth of the doublon Floquet miniband goes to zero. Scan A/omega from 0.5 to 2.0. Report the first critical amplitude ratio (A/omega)_DL at which the doublon band collapses. Units: A and omega share the same energy units (hbar=1). Output a JSON object {\"A_over_omega_DL\": <value>}.",
+  "output_schema": {
+    "A_over_omega_DL": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flq-b3-floquet-delta-ad-pole-domain-exit",
+  "track": "B3",
+  "track_dir": "B3-critical-points",
+  "split": "train",
+  "model_family": "floquet-delta-scatterer",
+  "verifier_type": "scalar_tolerance",
+  "question": "Consider the one-dimensional delta-function scatterer with time-periodic potential H(x,t) = -(hbar^2 / 2mu) d^2/dx^2 + [V_s + V_d cos(omega t)] delta(x), with static potential V_s = 0 (no static component). Define the dimensionless driving strength a_d = mu V_d^2 / (8 hbar^3 omega) and scaled kinetic energy epsilon = E / (hbar omega). Quasibound-state energies epsilon = epsilon_R - i epsilon_I (epsilon_I > 0) are found by solving the infinite tridiagonal outgoing-wave matrix equation with diagonal entries sqrt(epsilon + n) (a_s = 0) and nearest-neighbor off-diagonals i sqrt(a_d). The 'domain D_0' is defined by 0 < epsilon_R < 1 (between photon-sideband thresholds at epsilon_R = 0 and epsilon_R = 1). A quasibound pole exists in D_0 for small a_d > 0. Scan a_d from 0 to 1.5. After the transmission zero disappears at the first critical driving strength, the corresponding quasibound pole continues to move; locate the second critical value a_d_c2 at which the pole's real part crosses the lower photon-sideband threshold at epsilon_R = 0, causing the pole to exit D_0. Report the result to three significant figures. Output a JSON object {\"a_d_c2\": <value>}.",
+  "output_schema": {
+    "a_d_c2": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

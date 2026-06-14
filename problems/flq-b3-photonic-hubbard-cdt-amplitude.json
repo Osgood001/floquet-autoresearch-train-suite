@@ -1,0 +1,13 @@
+{
+  "id": "flq-b3-photonic-hubbard-cdt-amplitude",
+  "track": "B3",
+  "track_dir": "B3-critical-points",
+  "split": "train",
+  "model_family": "hubbard-doublon",
+  "verifier_type": "scalar_tolerance",
+  "question": "Consider a two-dimensional square photonic waveguide lattice acting as a simulator of the one-dimensional two-particle Hubbard model. The propagation coordinate z plays the role of time. The Floquet Hamiltonian is H(z) = sum_{l,m} [Delta_beta * delta_{l,m on diagonal}] |l,m><l,m| + kappa * sum_{<i,j>} (|i><j| + h.c.) + A * sum_{l,m on diagonal} cos(omega * z) |l,m><l,m|, where kappa = 0.04 mm^{-1} is the nearest-neighbor coupling, Delta_beta = -0.18 mm^{-1} is the fixed diagonal on-site shift, omega = 1.57 mm^{-1} is the spatial modulation frequency, and A (in micrometers of physical waveguide displacement, with an effective coupling determined by the modulation geometry) is the sinusoidal modulation amplitude applied to diagonal (doublon-carrying) waveguides. The one-period Floquet evolution operator is U = T-exp[-i integral_0^{z_0} H(z') dz'] where z_0 = 2*pi/omega. In the two-particle sector, the Floquet quasienergy spectrum splits into a narrow paired (doublon) miniband and a wider unpaired band. Scan A from 1 to 15 micrometers. Report the critical amplitude A_CDT (in micrometers) at which coherent destruction of tunneling (CDT) of the paired state occurs — identified as the drive amplitude that produces maximum localization (highest inverse participation ratio, IPR) of the doublon at the lattice output and at which the paired Floquet miniband undergoes an approximate collapse. Output a JSON object {\"A_CDT_um\": <value>}.",
+  "output_schema": {
+    "A_CDT_um": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

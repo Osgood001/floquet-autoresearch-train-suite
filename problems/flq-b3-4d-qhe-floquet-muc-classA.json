@@ -1,0 +1,13 @@
+{
+  "id": "flq-b3-4d-qhe-floquet-muc-classA",
+  "track": "B3",
+  "track_dir": "B3-critical-points",
+  "split": "train",
+  "model_family": "floquet-4d-dirac",
+  "verifier_type": "scalar_tolerance",
+  "question": "Consider the four-dimensional Dirac-lattice Floquet model defined by the stroboscopic evolution operator F = exp(-i*H(p)) * exp(-i*V(x)), where H(p) is the 4x4 Dirac Hamiltonian H(p) = K*(mu + sum_{i=1}^{4} cos(p_i)) * Gamma_0 + K*sum_{i=1}^{4} sin(p_i) * Gamma_i with disorder strength parameter 1/K and effective-mass parameter mu, and V(x) = V1(x1) - sum_{i=2}^{4} omega_i * x_i is a separable potential that breaks time-reversal symmetry (V1(x1) = x1^2 * tau_z otimes sigma_0, with tau_z in valley space). The incommensurate driving frequencies omega_i are chosen to be mutually irrational. The model is in symmetry class A (broken time-reversal). At clean-limit (1/K -> 0) the second Chern number satisfies C = -sign(mu) for 2 < |mu| < 4. Scan the effective-mass parameter mu in the range 3.0 to 5.0 at fixed disorder strength 1/K = 1/K_critical to locate the metal-insulator transition between the C=-1 insulating phase and the metallic phase. Use finite-time scaling of the mean-square displacement Delta^2(t) via the anomalous-diffusion scaling form Delta^2(t)/sqrt(t) = D(xi^{-4} * t) with xi ~ |mu - mu_c|^{-nu} to extract the critical mu_c. (The disorder-strength window that produces the metallic phase is approximately 1 < 1/K < 10.) Output a JSON object {\"mu_c_classA_C-1\": <value>}.",
+  "output_schema": {
+    "mu_c_classA_C-1": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

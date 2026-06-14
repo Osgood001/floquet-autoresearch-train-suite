@@ -1,0 +1,13 @@
+{
+  "id": "flq-b1-kicked-rotor-dirac",
+  "track": "B1",
+  "track_dir": "B1-topo-invariants",
+  "split": "train",
+  "model_family": "kicked-rotor",
+  "verifier_type": "integer_exact",
+  "question": "Consider a quantum resonance (N=3) of a periodically kicked rigid rotor (linear diatomic molecule) with rotational constant B, driven at quantum-resonance period T = tau_B/3 where tau_B = h/B is the rotational revival time. The kick Hamiltonian consists of two terms: H_kick = sum_q [P_1(alpha)*cos^2(theta_hat) + P_2(alpha)*cos(theta_hat)] * delta(t - q*T), where P_1(alpha) = P*cos^2(alpha), P_2(alpha) = P*sin^2(alpha), with overall kick strength P = 2.5 (in dimensionless units where B = 1) and offset parameter alpha in [0, 2*pi). In the angular-momentum lattice representation, the Floquet operator after one period maps angular momentum states |l> -> |l> and has an effective Bloch Hamiltonian H(k, alpha) that is a 3x3 matrix (N=3 periodicity) with two Dirac cones where the second and third Floquet bands touch at k = pi. Treating (k, alpha) as a 2D synthetic Brillouin zone, the Berry phase accumulated around a small closed loop encircling each cone is quantized. How many topological edge states are present at the boundary of a half-infinite angular-momentum lattice (l >= 0), connecting the two Dirac cones across the Brillouin zone? Output a JSON object {\"edge_state_count\": <integer>}.",
+  "output_schema": {
+    "edge_state_count": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

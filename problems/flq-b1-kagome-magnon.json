@@ -1,0 +1,15 @@
+{
+  "id": "flq-b1-kagome-magnon",
+  "track": "B1",
+  "track_dir": "B1-topo-invariants",
+  "split": "train",
+  "model_family": "magnon-honeycomb",
+  "verifier_type": "integer_exact",
+  "question": "Consider a periodically driven kagome ferromagnet with Heisenberg exchange J, out-of-plane Dzyaloshinskii-Moriya interaction D (with D/J = 0.15), and spin magnitude S. In the off-resonant regime (drive frequency omega >> magnon bandwidth Delta), a circularly polarized vector potential A(tau) = [A_x*sin(omega*tau), A_y*sin(omega*tau + phi), 0] drives the system via minimal coupling (Peierls substitution on magnon hoppings). In the off-resonant regime, the drive renormalizes the three bond-direction hopping amplitudes via Peierls substitution. For the undriven system (A_x = A_y = 0), the three magnon bands carry Chern numbers (-1, 0, +1) for the lower, middle, and upper bands respectively. Under circularly polarized driving with phi = pi/2 and A_x = A_y, choose the drive amplitude A_x at which the hopping along the BC bond changes sign (the drive amplitude at which the Floquet-renormalized BC hopping passes through zero under the circularly polarized field). At this amplitude, what are the Chern numbers (C_lower, C_middle, C_upper) of the three magnon bands in the new phase? Output a JSON object {\"chern_lower\": <integer>, \"chern_middle\": <integer>, \"chern_upper\": <integer>}.",
+  "output_schema": {
+    "chern_lower": "<number>",
+    "chern_middle": "<number>",
+    "chern_upper": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

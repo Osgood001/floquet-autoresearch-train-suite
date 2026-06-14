@@ -1,0 +1,13 @@
+{
+  "id": "flq-b3-weyl-like-node-coalescence-A0c",
+  "track": "B3",
+  "track_dir": "B3-critical-points",
+  "split": "train",
+  "model_family": "floquet-weyl-stacked-chern",
+  "verifier_type": "scalar_tolerance",
+  "question": "Consider a stack of two-band two-dimensional Chern insulators with a spatially periodic on-site potential V(z) = V_z cos(Q_z z) along the stacking direction z (Q_z = 2pi/lambda_z). The static layer Hamiltonian density is H(k_x, k_y, z) = [m_z + V_z cos(Q_z z)] sigma_z + m_0 [2 - cos(k_x a) - cos(k_y a)] sigma_z + t_x sin(k_x a) sigma_x + t_y sin(k_y a) sigma_y, with parameters m_z = 0.5 eV, m_0 = 1 eV, V_z = 1 eV, t_x = t_y = t_0 = 1 eV, a = 1 nm, and modulation period lambda_z = 31a. A linearly polarized time-periodic electric field of frequency omega and amplitude E_0 is additionally applied (dimensionless drive amplitude A_0 = e E_0 / (hbar omega), units nm^{-1}). In the high-frequency Floquet limit, the electric field renormalizes the effective layer mass. Floquet Weyl-like nodes (gap closings at k_x = k_y = 0) exist for small A_0; as A_0 increases the two nodes approach each other. Scan A_0 from 0 to 1.5 nm^{-1}. Locate the critical drive amplitude A_0_c at which the two Floquet Weyl-like nodes coalesce and annihilate — the transition from the Weyl-like phase to a fully gapped phase — identified by the merging of the two gap-closing momenta along the stacking direction into a single point and the simultaneous opening of a gap. Report the result to four significant figures. Output a JSON object {\"A0c_inv_nm\": <value>}.",
+  "output_schema": {
+    "A0c_inv_nm": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "flq-b1-kicked-ssh-chern2",
+  "track": "B1",
+  "track_dir": "B1-topo-invariants",
+  "split": "train",
+  "model_family": "kicked-ssh",
+  "verifier_type": "integer_exact",
+  "question": "Consider the kicked extended SSH model: a one-dimensional chain with momentum-space Hamiltonian H(k) = d_x(k)*sigma_x + d_y(k)*sigma_y + d_z(k)*sigma_z, where d_x(k) = t*(1 + delta*cos(theta)) + t*(1 - delta*cos(theta))*cos(k), d_y(k) = t*(1 - delta*cos(theta))*sin(k), d_z(k) = g + h*cos(theta - phi). Here theta is a synthetic (crystal-angle) parameter, phi is an offset, t is the hopping amplitude, delta parameterizes the dimerization, g and h are on-site potential parameters. The system is periodically kicked in the y-direction: H_kick = alpha_y * sigma_y * sum_m delta(t - m*T), so the one-period Floquet evolution operator is U(k, theta) = exp(-i*alpha_y*sigma_y) * exp(-i*H(k, theta)*T). Using parameters t = 1, delta = 0.5, h = 1, T = 3, alpha_y = 0.8 (with alpha_x = alpha_z = 0), and treating (k, theta) as a 2D synthetic Brillouin zone and scanning over the full two-parameter space (g, phi) to find the phase with maximum |C| (note: at phi=0 a theta -> -theta symmetry forces C=0, so phi != 0 is required): what is the maximum magnitude of the stroboscopic Chern number C achievable by this Y-kicking protocol? Output a JSON object {\"max_chern_number_magnitude\": <integer>}.",
+  "output_schema": {
+    "max_chern_number_magnitude": "<number>"
+  },
+  "instructions": "Return this record prediction inside predictions.json under this exact record id. Do not include prose in predictions.json."
+}
