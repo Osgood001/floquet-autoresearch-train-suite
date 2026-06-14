@@ -1,0 +1,42 @@
+{
+  "flq-b1-nhqw-nonbloch": {
+    "winding_number": 0
+  },
+  "flq-b1-bbh-n0-0-npi-4": {
+    "N_0": 0,
+    "N_pi": 0,
+    "corner_states_pi_gap": 0
+  },
+  "flq-b1-kicked-ssh-chern2": {
+    "max_chern_number_magnitude": 0
+  },
+  "flq-b1-kagome-magnon": {
+    "chern_lower": 0,
+    "chern_middle": 0,
+    "chern_upper": 0
+  },
+  "flq-b1-hofstadter-chern": {
+    "chern_number_lowest_band": 0
+  },
+  "flq-b1-kicked-rotor-dirac": {
+    "edge_state_count": 0
+  },
+  "flq-b3-4d-qhe-floquet-muc-classA": {
+    "mu_c_classA_C-1": 0.0
+  },
+  "flq-b3-two-electron-doublon-localization": {
+    "A_over_omega_DL": 0.0
+  },
+  "flq-b3-floquet-delta-ad-zero-threshold": {
+    "a_d_c1": 0.0
+  },
+  "flq-b3-floquet-delta-ad-pole-domain-exit": {
+    "a_d_c2": 0.0
+  },
+  "flq-b3-weyl-like-node-coalescence-A0c": {
+    "A0c_inv_nm": 0.0
+  },
+  "flq-b3-photonic-hubbard-cdt-amplitude": {
+    "A_CDT_um": 0.0
+  }
+}
