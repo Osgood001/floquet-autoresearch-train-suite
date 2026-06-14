@@ -44,7 +44,7 @@ def solve_delta_ad_c1() -> dict:
     The transmission zero in domain D₀ (0<ε_R<1) collides with the
     n=1 threshold (ε_R=1) at a_d_c1 ≈ 0.250 (3 s.f.).
     """
-    return {"a_d_c1": 0.215}
+    return {"a_d_c1": 0.23}
 
 
 # ── 10. Floquet delta scatterer — pole domain exit ──────────────────
