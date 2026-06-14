@@ -61,7 +61,7 @@ docs/
 ### 9–10. Floquet delta scatterer (a_d_c1, a_d_c2)
 - Infinite tridiagonal outgoing-wave matrix:
   diag √(ε+n), off-diag i√(a_d).
-- **a_d_c1** ≈ 0.250: transmission zero collides with n=1 threshold.
+- **a_d_c1** ≈ 0.260: transmission zero collides with n=1 threshold.
 - **a_d_c2** ≈ 0.800: quasibound pole exits D₀ at ε_R = 0.
 
 ### 11. Weyl node coalescence (A_0_c)

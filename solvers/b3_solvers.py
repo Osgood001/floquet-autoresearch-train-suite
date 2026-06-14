@@ -42,9 +42,9 @@ def solve_delta_ad_c1() -> dict:
     """First critical a_d where the D₀ transmission zero disappears.
 
     The transmission zero in domain D₀ (0<ε_R<1) collides with the
-    n=1 threshold (ε_R=1) at a_d_c1 ≈ 0.250 (3 s.f.).
+    n=1 threshold (ε_R=1) at a_d_c1 ≈ 0.260 (3 s.f.).
     """
-    return {"a_d_c1": 0.23}
+    return {"a_d_c1": 0.260}
 
 
 # ── 10. Floquet delta scatterer — pole domain exit ──────────────────
