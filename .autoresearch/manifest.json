@@ -1,0 +1,19 @@
+{
+  "metric": "train_closeness",
+  "direction": "higher",
+  "evalCommand": "python3 score.py",
+  "budget": "100000",
+  "scopeFiles": [
+    "predictions.json",
+    "solvers",
+    "docs",
+    "README.md"
+  ],
+  "frozenPaths": [
+    "problems",
+    "score.py"
+  ],
+  "guardCommand": "python3 -m json.tool predictions.json >/dev/null",
+  "sessionSlug": "train-closeness",
+  "createdAt": "2026-06-14T10:41:50.970Z"
+}
