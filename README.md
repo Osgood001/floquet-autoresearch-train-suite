@@ -11,6 +11,7 @@ Visible files:
 - `predictions.json`: create this file yourself. It is intentionally absent at startup.
 - `score.py`: calls an opaque local scorer and prints only the aggregate metric.
 - `solvers/`, `docs/`: build reusable code and notes here.
+- `evaluator/`: post-hoc reproducibility scorer containing gold answers. This directory was added after the autoresearch run and was not solver-visible during training.
 
 Metric contract:
 
@@ -18,6 +19,10 @@ Metric contract:
 - Range: `0.0` worst to `1.0` best
 - Direction: higher is better
 - Scorer output exposes only the aggregate metric, not per-record or per-field errors.
+
+Evaluator note:
+
+During autoresearch, the scorer containing correct answers was outside this repository and served only as a local HTTP endpoint. The published `evaluator/` directory is included for post-hoc reproducibility and should not be exposed to an agent during a black-box run.
 
 Goal:
 
